@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #666;
+}
+
+h1
+{
+    color: white;
+}
+
+.screen
+{
+    cursor: pointer;
+    background-color: black !important;
+    width: 60%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; 
+}
+
+.controls
+{
+    background: #333;
+    color: white;
+    width: 60%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.controls .btn
+{
+    border: 0px;
+    background: transparent;
+    cursor: pointer; 
+}
+
+.controls .fa-play
+{
+    color: #28a745;
+}
+
+.controls .fa-stop
+{
+    color: #dc3545;
+}
+
+.controls .fa-pause
+{
+    color: white;
+}
+
+.controls .timestamp
+{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn:focus
+{
+    outline: 0;
+}
+
+@media (max-width: 800px)
+{
+    .screen,
+    .controls
+    {width: 90%;}
+}
